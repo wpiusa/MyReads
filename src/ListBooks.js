@@ -13,7 +13,7 @@ class ListBooks extends React.Component {
 
 
   render() {
-    console.log(this.props.books) 
+    
     let currentlyReading
     let wantToRead
     let read

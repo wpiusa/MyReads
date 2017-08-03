@@ -16,11 +16,20 @@ class Search extends Component {
   }
 
   handleUpdateBook = (value,book) => {
-    book.shelf=value
-    this.props.onUpdateBook(book)
+    if (this.state.query != value) {
+      book.shelf=value
+      this.props.onUpdateBook(book)
+    } 
+    
   }  
 
-  
+  /*
+   if (this.state.results != results) {
+    this.setState({
+        results
+    })
+}
+  */
 
   render(){
     let showingBooks
